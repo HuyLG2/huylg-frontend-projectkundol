@@ -207,6 +207,26 @@ option.size-option {
 .shop_3col .toolbar .toolbox .tb-right .tb-layout .btn-layout.active svg {
     fill: #fe4536;
 }
+
+@media only screen and (max-width: 620px){
+    .shop_3col .toolbar .toolbox {
+        display: block;
+    }
+    .shop_3col .toolbar .toolbox .tb-left{
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 388px){
+    .shop_3col .toolbar .toolbox .tb-right{
+        display: block;
+    }
+    .shop_3col .toolbar .toolbox .tb-right .tb-sort{
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}
+
 /* san pham id="swap" */
 .shop_3col .productbar {
     padding-top: 15px;
