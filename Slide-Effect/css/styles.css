@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main .wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+main .wrapper .flickity-slider {
+  -webkit-transform: translateX(0) !important;
+          transform: translateX(0) !important;
+}
+
+main .wrapper .main-carousel {
+  position: relative;
+}
+
+main .wrapper .main-carousel .item {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+
+main .wrapper .main-carousel img {
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: inset(0% 100% 0% 0%);
+          clip-path: inset(0% 100% 0% 0%);
+  -webkit-transition: -webkit-clip-path 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: -webkit-clip-path 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: clip-path 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: clip-path 1s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-clip-path 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+main .wrapper .main-carousel .caption {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+main .wrapper .main-carousel h1 {
+  font-size: 4rem;
+  font-family: "Poppins";
+  font-weight: bold;
+  z-index: 5;
+  line-height: 1;
+  white-space: nowrap;
+  color: paleturquoise;
+  -webkit-transform: translateY(200px) rotate(10deg);
+          transform: translateY(200px) rotate(10deg);
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+}
+
+main .wrapper .main-carousel p {
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: "Poppins";
+  z-index: 5;
+  line-height: 1;
+  opacity: 0;
+  color: palegreen;
+  -webkit-transform: translateY(400px);
+          transform: translateY(400px);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+main .wrapper .main-carousel .active-h1 {
+  -webkit-transform: translateY(0) rotate(0);
+          transform: translateY(0) rotate(0);
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+}
+
+main .wrapper .main-carousel .active-p {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+main .wrapper .carousel-cell {
+  width: 100%;
+  /* full width */
+  height: 700px;
+  margin-right: 10px;
+  left: 0 !important;
+}
+
+main .wrapper .is-selected img {
+  -webkit-clip-path: inset(0% 0% 0% 0%);
+          clip-path: inset(0% 0% 0% 0%);
+  -webkit-transition: -webkit-clip-path 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: -webkit-clip-path 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: clip-path 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: clip-path 1s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-clip-path 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+main .wrapper .is-selected h1 {
+  -webkit-transform: translateY(0) rotate(0);
+          transform: translateY(0) rotate(0);
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+}
+
+main .wrapper .is-selected p {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+}
+/*# sourceMappingURL=styles.css.map */
